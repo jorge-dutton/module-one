@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.test.service</groupId>
 		<artifactId>test-parent</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
+		<version>1.0.0</version>
 	</parent>
 	
 	
