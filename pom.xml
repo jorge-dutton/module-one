@@ -47,6 +47,7 @@
 		</dependencies>
 	</dependencyManagement>
 	
+	<!--  
 	<distributionManagement>
 		<repository>
 			<id>libs-release-local</id>
@@ -59,5 +60,5 @@
 			<url>http://gateway.docker.internal:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
-	
+	-->
 </project>
