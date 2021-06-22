@@ -12,7 +12,7 @@
 
 	<artifactId>module-one</artifactId>
 
-	<version>1.0.18-SNAPSHOT</version>
+	<version>1.0.18</version>
 
 	<name>First child module</name>
 
