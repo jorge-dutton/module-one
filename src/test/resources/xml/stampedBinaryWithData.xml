@@ -1,0 +1,7 @@
+<stampedBinary xmlns="urn:logalty:schemas:core:stampedbinaryXml:1.0">
+  <guid>001001-9996-000000000166921.par</guid>
+  <name>Doc.pdf</name>
+  <nameStamped>Doc_stamped.pdf</nameStamped>
+  <mimeType>application/pdf</mimeType>
+  <binary>TestReadData</binary>
+</stampedBinary>

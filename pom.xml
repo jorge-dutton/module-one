@@ -2,16 +2,16 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>com.test.service</groupId>
 		<artifactId>test-parent</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.12</version>
 	</parent>
-	
-	
+
+
 	<artifactId>module-one</artifactId>
-	
+
 	<version>1.0.10-SNAPSHOT</version>
 
 	<name>First child module</name>
@@ -46,19 +46,10 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
-	<!--  
-	<distributionManagement>
-		<repository>
-			<id>libs-release-local</id>
-			<name>6093067c5d74-releases</name>
-			<url>http://gateway.docker.internal:8081/artifactory/libs-release-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>libs-snapshot-local</id>
-			<name>6093067c5d74-snapshots</name>
-			<url>http://gateway.docker.internal:8081/artifactory/libs-snapshot-local</url>
-		</snapshotRepository>
-	</distributionManagement>
-	-->
+
+	<!-- <distributionManagement> <repository> <id>libs-release-local</id> <name>6093067c5d74-releases</name> 
+		<url>http://gateway.docker.internal:8081/artifactory/libs-release-local</url> 
+		</repository> <snapshotRepository> <id>libs-snapshot-local</id> <name>6093067c5d74-snapshots</name> 
+		<url>http://gateway.docker.internal:8081/artifactory/libs-snapshot-local</url> 
+		</snapshotRepository> </distributionManagement> -->
 </project>
