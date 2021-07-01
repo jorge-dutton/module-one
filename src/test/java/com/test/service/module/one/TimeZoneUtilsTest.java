@@ -28,11 +28,6 @@ public class TimeZoneUtilsTest {
 	private static final String GMTminus03 = "GMT-3";
 	private static final String GMTminus02 = "GMT-2";
 
-	@Before
-	public void setup() {
-		TimeZone.setDefault(TimeZone.getTimeZone("Europe/Madrid"));
-	}
-
 	// Test valid Id
 	@Test
 	public void testValidCalendar() {
