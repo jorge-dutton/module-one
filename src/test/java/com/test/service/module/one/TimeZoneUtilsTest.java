@@ -161,7 +161,7 @@ public class TimeZoneUtilsTest {
 		String gmtTxt = TimeZoneUtils.getGMTOffset(datewinter);
 		assertEquals(
 				"Spanish time in winter  should has [" + TimeZoneUtilsTest.GMTminus02 + "] instead of [" + gmtTxt + "]",
-				TimeZoneUtilsTest.GMTminus02, gmtTxt);
+				TimeZoneUtilsTest.GMTminus03, gmtTxt);
 	}
 
 	@Test
