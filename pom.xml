@@ -25,16 +25,6 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.digidoc4j.dss</groupId>
-				<artifactId>spec-jws</artifactId>
-				<version>5.8</version>
-			</dependency>
-			<dependency>
-				<groupId>org.digidoc4j.dss</groupId>
-				<artifactId>spec-jades</artifactId>
-				<version>5.8</version>
-			</dependency>
-			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
 				<version>1.2.14</version>
