@@ -130,24 +130,17 @@ public class ZipUtilsTest {
 		}
 
 		private byte[] readSingleFile(String pathToFile) {
-			InputStream is = getClass().getClassLoader().getResourceAsStream(pathToFile);
+			Path resourceDirectory = Paths.get("src", "test", "resources", pathToFile);
+
 			byte[] data = null;
 			try {
+				InputStream is = Files.newInputStream(resourceDirectory);
 				data = new byte[is.available()];
 				is.read(data);
 			} catch (IOException e) {
-				fail("This error should not happen["+e.getMessage()+"]");
+				fail("This error should not happen[" + e.getMessage() + "]");
 			}
 			return data;
-			
-//			String pathToFileTmp =  getClass().getClassLoader().getResource( pathToFile).getPath();
-//			Path path = Paths.get(pathToFileTmp.substring(1));
-//			byte[] data = null;
-//			try {
-//				data = Files.readAllBytes(path);
-//			} catch (IOException e) {
-//				fail("This error should not happen["+e.getMessage()+"]");
-//			}
-//			return data;
+
 		}
 }
