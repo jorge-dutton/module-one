@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.test.service</groupId>
 		<artifactId>test-parent</artifactId>
-		<version>1.0.12</version>
+		<version>1.0.6</version>
 	</parent>
 
 
@@ -17,8 +17,23 @@
 
 	<name>First child module</name>
 
+	<properties>
+		<dss.groupId>eu.europa.ec.joinup.sd-dss</dss.groupId>
+		<dss.version>5.7</dss.version>
+	</properties>
+
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>org.digidoc4j.dss</groupId>
+				<artifactId>spec-jws</artifactId>
+				<version>5.8</version>
+			</dependency>
+			<dependency>
+				<groupId>org.digidoc4j.dss</groupId>
+				<artifactId>spec-jades</artifactId>
+				<version>5.8</version>
+			</dependency>
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
