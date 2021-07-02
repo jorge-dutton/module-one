@@ -6,50 +6,17 @@
 	<parent>
 		<groupId>com.test.service</groupId>
 		<artifactId>test-parent</artifactId>
-		<version>1.0.7</version>
+		<version>1.0.9</version>
 	</parent>
 
 	<artifactId>module-one</artifactId>
 
 	<version>1.0.22-SNAPSHOT</version>
 
-
 	<name>First child module</name>
-
-	<properties>
-		<dss.groupId>eu.europa.ec.joinup.sd-dss</dss.groupId>
-		<dss.version>5.7</dss.version>
-	</properties>
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- https://mvnrepository.com/artifact/org.digidoc4j.dss/dss-xades -->
-			<dependency>
-				<groupId>${dss.groupId}</groupId>
-				<artifactId>dss-enumerations</artifactId>
-				<version>${dss.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>${dss.groupId}</groupId>
-				<artifactId>dss-service</artifactId>
-				<version>${dss.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>${dss.groupId}</groupId>
-				<artifactId>dss-pades</artifactId>
-				<version>${dss.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>${dss.groupId}</groupId>
-				<artifactId>dss-pades-pdfbox</artifactId>
-				<version>${dss.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>${dss.groupId}</groupId>
-				<artifactId>dss-token</artifactId>
-				<version>${dss.version}</version>
-			</dependency>
-			<!-- ************************************************************ -->
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
