@@ -29,6 +29,11 @@ public class TimeZoneUtilsTest {
 	private static final String GMTminus02 = "GMT-2";
 
 	// Test valid Id
+	@Before
+    public void setup() {
+        TimeZone.setDefault(TimeZone.getTimeZone("Europe/Madrid"));
+    }
+	
 	@Test
 	public void testValidCalendar() {
 		assertTrue(TimeZoneUtils.isValidTimeZoneId(TimeZoneUtilsTest.EUROPE_MADRID_CALENDAR));
@@ -134,7 +139,7 @@ public class TimeZoneUtilsTest {
 		Calendar dateSummer = getSummerDate(TimeZone.getTimeZone(EUROPE_LISBON_CALENDAR));
 		String gmtTxt = TimeZoneUtils.getGMTOffset(dateSummer);
 		assertEquals(
-				"Spanish time in summer should has [" + TimeZoneUtilsTest.GMTplus01 + "] instead of [" + gmtTxt + "]",
+				"Lisbon time in summer should has [" + TimeZoneUtilsTest.GMTplus01 + "] instead of [" + gmtTxt + "]",
 				TimeZoneUtilsTest.GMTplus01, gmtTxt);
 	}
 
@@ -142,7 +147,7 @@ public class TimeZoneUtilsTest {
 	public void testGMTPortugalWinterTime() {
 		Calendar datewinter = getWinterDate(TimeZone.getTimeZone(EUROPE_LISBON_CALENDAR));
 		String gmtTxt = TimeZoneUtils.getGMTOffset(datewinter);
-		assertEquals("Spanish time in winter  should has [" + TimeZoneUtilsTest.GMTstandart + "] instead of [" + gmtTxt
+		assertEquals("Lisbon time in winter  should has [" + TimeZoneUtilsTest.GMTstandart + "] instead of [" + gmtTxt
 				+ "]", TimeZoneUtilsTest.GMTstandart, gmtTxt);
 	}
 
@@ -151,7 +156,7 @@ public class TimeZoneUtilsTest {
 		Calendar dateSummer = getSummerDate(TimeZone.getTimeZone(AMERICA_SAOPAULO_CALENDAR));
 		String gmtTxt = TimeZoneUtils.getGMTOffset(dateSummer);
 		assertEquals(
-				"Spanish time in summer should has [" + TimeZoneUtilsTest.GMTminus03 + "] instead of [" + gmtTxt + "]",
+				"Sao Paulo time in summer should has [" + TimeZoneUtilsTest.GMTminus03 + "] instead of [" + gmtTxt + "]",
 				TimeZoneUtilsTest.GMTminus03, gmtTxt);
 	}
 
@@ -160,7 +165,7 @@ public class TimeZoneUtilsTest {
 		Calendar datewinter = getWinterDate(TimeZone.getTimeZone(AMERICA_SAOPAULO_CALENDAR));
 		String gmtTxt = TimeZoneUtils.getGMTOffset(datewinter);
 		assertEquals(
-				"Spanish time in winter  should has [" + TimeZoneUtilsTest.GMTminus02 + "] instead of [" + gmtTxt + "]",
+				"Sao Paulo time in winter  should has [" + TimeZoneUtilsTest.GMTminus03 + "] instead of [" + gmtTxt + "]",
 				TimeZoneUtilsTest.GMTminus03, gmtTxt);
 	}
 
