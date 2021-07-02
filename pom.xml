@@ -9,7 +9,6 @@
 		<version>1.0.7</version>
 	</parent>
 
-
 	<artifactId>module-one</artifactId>
 
 	<version>1.0.22-SNAPSHOT</version>
@@ -24,6 +23,33 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- https://mvnrepository.com/artifact/org.digidoc4j.dss/dss-xades -->
+			<dependency>
+				<groupId>${dss.groupId}</groupId>
+				<artifactId>dss-enumerations</artifactId>
+				<version>${dss.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${dss.groupId}</groupId>
+				<artifactId>dss-service</artifactId>
+				<version>${dss.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${dss.groupId}</groupId>
+				<artifactId>dss-pades</artifactId>
+				<version>${dss.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${dss.groupId}</groupId>
+				<artifactId>dss-pades-pdfbox</artifactId>
+				<version>${dss.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${dss.groupId}</groupId>
+				<artifactId>dss-token</artifactId>
+				<version>${dss.version}</version>
+			</dependency>
+			<!-- ************************************************************ -->
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
